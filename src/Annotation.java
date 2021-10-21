@@ -5,6 +5,10 @@ public class Annotation {
         this.figure = figure;
     }
 
+    public Figure getFigure() {
+        return figure;
+    }
+
     @Override
     public String toString() {
         String s = "";
