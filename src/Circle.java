@@ -1,4 +1,4 @@
-public class Circle extends Figure {
+public class Circle extends Figure implements Movable{
     private double x0, y0, r;
     private String name;
 
@@ -23,5 +23,11 @@ public class Circle extends Figure {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void move(int dx, int dy) {
+        x0 += dx;
+        y0 += dy;
     }
 }
