@@ -1,4 +1,4 @@
-public class Rectangle extends Figure {
+public class Rectangle extends Figure implements Movable{
     private double x1, y1, x2, y2;
     private String name;
 
@@ -28,5 +28,13 @@ public class Rectangle extends Figure {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public void move(int dx, int dy) {
+        x1 += dx;
+        y1 += dy;
+        x2 += dx;
+        y2 += dy;
     }
 }
